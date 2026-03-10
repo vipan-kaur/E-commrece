@@ -11,6 +11,8 @@ import SearchProvider from './searchprovider'
 import Login from './pages.jsx/login'
 import Aboutpage from './pages.jsx/about/aboutpage.jsx'
 import Use from './pages.jsx/usememo.jsx'
+import Test from './test.jsx'
+import Id from './testid.jsx'
 const App = () => {
   return (
     <>
@@ -27,6 +29,8 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/aboutpage' element={<Aboutpage/>}/>
         <Route path="/uses" element={<Use/>}/>
+        <Route path='/getall' element={<Test/>}/>
+           <Route path='/getbyid/:id' element={<Id/>}/>
         </Routes>
         <Footer/>
    </BrowserRouter>
